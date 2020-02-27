@@ -35,6 +35,8 @@ namespace Lab_1
             {
                 str = str + Convert.ToString(item) + ' ';
             }
+            if (!string.IsNullOrEmpty(str))
+                str = str.TrimEnd(' ');
             return str;
         }
     }

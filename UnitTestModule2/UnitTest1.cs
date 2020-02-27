@@ -1,8 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Lab_1_3;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-
+using Lab_1;
 namespace UnitTestModule2
 {
     [TestClass]

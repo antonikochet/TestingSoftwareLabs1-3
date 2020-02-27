@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Lab_1_3;
+
 using System.Collections.Generic;
+using Lab_1;
 
 namespace UnitTestModule1
 {
@@ -32,6 +33,9 @@ namespace UnitTestModule1
         [TestMethod]
         public void ConvertListToStringTest()
         {
+            Assert.AreEqual(Module1.ConvertListInString(new List<int>()), "");
+            Assert.AreEqual(Module1.ConvertListInString(new List<int>() { 123, 543, 759, 901}), "123 543 759 901");
+            Assert.AreEqual(Module1.ConvertListInString(new List<int>() { 123, 745, 845, 412, 846, 15, 0, 741, -45}), "123 745 845 412 846 15 0 741 -45");
 
         }
     }
